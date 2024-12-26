@@ -25,4 +25,8 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\RdlcDesigner\RdlcDesigner.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Design\" />
+	</ItemGroup>
 </Project>
