@@ -1,0 +1,6 @@
+@RdlcPrintMaster_HostAddress = http://localhost:5121
+
+GET {{RdlcPrintMaster_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -6,27 +6,33 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+ 
 	<ItemGroup>
-		<PackageReference Include="AspNetCore.Reporting" Version="2.1.0" />
-		<PackageReference Include="Dapper" Version="2.1.35" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
-		<PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="4.1.0" />
-		<PackageReference Include="Microsoft.ReportViewer.WebForms" Version="10.0.40219.1" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
-		<PackageReference Include="System.CodeDom" Version="9.0.0" />
-		<PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-		<PackageReference Include="System.Drawing.Common" Version="9.0.0" />
-		<PackageReference Include="System.Security.Permissions" Version="9.0.0" />
-		<PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.0" />
-		<PackageReference Include="ZXing.Net" Version="0.16.9" />
+		<Content Include="Design\*.rdlc">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\RdlcDesigner\RdlcDesigner.csproj" />
-	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Design\" />
-	</ItemGroup>
+    <PackageReference Include="AspNetCore.Reporting" Version="2.1.0" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="4.1.0" />
+    <PackageReference Include="Microsoft.ReportViewer.WebForms" Version="10.0.40219.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.CodeDom" Version="9.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+    <PackageReference Include="System.Security.Permissions" Version="9.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
+  </ItemGroup>	
+  <ItemGroup>
+    <Folder Include="Design\" />
+  </ItemGroup>	
+  <ItemGroup>
+    <ProjectReference Include="..\RdlcDesigner\RdlcDesigner.csproj" />
+  </ItemGroup>
+
 </Project>
